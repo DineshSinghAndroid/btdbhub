@@ -1,0 +1,556 @@
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Allows an app to access precise location from location sources such as GPS -->
+    <!-- Allows an app to access approximate location derived from network location sources such as cell towers and Wi-Fi -->
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- Allows an app to read and write contact data -->
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- Allows read-only access to phone state, including the phone number of the device, current cellular network information, the status of any ongoing calls, and a list of any PhoneAccounts registered on the device -->
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- Allows an application to initiate a phone call without going through the Dialer user interface for the user to confirm the call being placed -->
+
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <!-- Allows an application to read/write (but not insert) the user's call log data -->
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <!-- Allows an application to send SMS messages and receive SMS messages -->
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Allows an application to read/write to external storage -->
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Required to be able to access the camera device -->
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- Allows applications to connect to paired bluetooth devices and manage them -->
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- Allows an application to record audio -->
+
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <!-- Allows an application to record video -->
+
+    <uses-permission android:name="android.permission.NFC" />
+    <!-- Allows applications to perform I/O operations over NFC -->
+
+    <uses-permission android:name="android.permission.USE_SIP" />
+    <!-- Allows an application to use SIP service -->
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- Allows an application to modify global audio settings -->
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- Allows an app to create windows using the type WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY, shown on top of all other apps -->
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- Allows applications to access information about Wi-Fi networks and change Wi-Fi connectivity state -->
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Allows applications to access information about networks -->
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Allows applications to access location data -->
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- Allows an application to read or write the system settings -->
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- Allows using PowerManager WakeLocks to keep processor from sleeping or screen from dimming -->
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- Allows access to the vibrator -->
+
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <!-- Allows an application to read/write the user's calendar data -->
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- Allows access to the list of accounts in the Accounts Service -->
+
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <!-- Allows an application to act as an AccountAuthenticator for the AccountManager -->
+
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.WRITE_PROFILE" />
+    <!-- Allows an application to read/write the user's personal profile data -->
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- Allows an application to request installing packages -->
+
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to request installing packages -->
+
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <!-- Allows an app to access location in the background -->
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <!-- Allows an application to use foreground services -->
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- Allows an application to receive the ACTION_BOOT_COMPLETED that is broadcast after the system finishes booting -->
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+    <!-- Allows an application to access assisted GPS location -->
+
+    <uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES"
+        tools:ignore="ProtectedPermissions" />
+    <!-- Allows read/write access to the "properties" table in the checkin database, to change values that get uploaded -->
+
+    <uses-permission android:name="android.permission.ACCESS_CONTENT_PROVIDERS_EXTERNALLY"
+        tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to access data from other applications that can be retrieved remotely -->
+
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <!-- Allows an application to access the download manager -->
+
+    <uses-permission android:name="android.permission.ACCESS_DRM_CERTIFICATES"
+        tools:ignore="ProtectedPermissions" />
+    <!-- Allows applications to access DRM content -->
+
+    <uses-permission android:name="android.permission.ACCESS_EPHEMERAL_APPS"
+        tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to access ephemeral apps -->
+
+    <uses-permission android:name="android.permission.ACCESS_FM_RADIO"
+        tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to access FM radio service -->
+
+    <uses-permission android:name="android.permission.ACCESS_IMS_CALL_SERVICE"
+        tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to access IMS call service -->
+
+    <uses-permission android:name="android.permission.ACCESS_KEYGUARD_SECURE_STORAGE"
+        tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to access secure keyguard storage -->
+
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- Allows an application to access extra location provider commands -->
+
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <!-- Allows an application to access any geographic locations persisted in the user's shared collection -->
+
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <!-- Allows an application to access Do Not Disturb settings -->
+
+    <uses-permission android:name="android.permission.ACCESS_PREFERRED_ACTIVITY" />
+    <!-- Allows an application to access preferred activity launchers -->
+
+    <uses-permission android:name="android.permission.ACCESS_RECOVERY_IMAGES" />
+    <!-- Allows an application to access recovery images stored on the phone -->
+
+    <uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER"
+        tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to access SurfaceFlinger's pixel format capabilities -->
+
+    <uses-permission android:name="android.permission.ACCESS_TV_TUNER"
+        tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to access TV tuner service -->
+
+    <uses-permission android:name="android.permission.ACCESS_VOICE_INTERACTION_SERVICE"
+        tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to access the voice interaction service -->
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_MULTICAST_STATE" />
+    <!-- Allows applications to enter Wi-Fi Multicast mode -->
+
+    <uses-permission android:name="android.permission.ACCEPT_HANDOVER" />
+    <!-- Allows an application to hand over a call to another application after it completes -->
+
+    <uses-permission android:name="android.permission.ACCOUNT_MANAGER"
+        tools:ignore="ProtectedPermissions" />
+    <!-- Allows applications to call into AccountAuthenticators -->
+
+    <uses-permission android:name="android.permission.ALLOCATE_AGGRESSIVE"
+        tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to request that kernel memory be allocated aggressively -->
+
+    <uses-permission android:name="android.permission.BATTERY_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to collect battery statistics -->
+
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"
+        tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by an AccessibilityService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_APPWIDGET"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to tell the AppWidget service which application can access AppWidget's data -->
+
+    <uses-permission android:name="android.permission.BIND_AUTOFILL_SERVICE"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by an AutofillService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_CALL_REDIRECTION_SERVICE"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by a CallRedirectionService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_CARRIER_MESSAGING_CLIENT_SERVICE"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by a CarrierMessagingClientService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_CARRIER_MESSAGING_SERVICE"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by a CarrierMessagingService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_CARRIER_SERVICES"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by a CarrierService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_CHOOSER_TARGET_SERVICE"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by a ChooserTargetService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_CONDITION_PROVIDER_SERVICE"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by a ConditionProviderService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_CONNECTION_SERVICE"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by a ConnectionService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_DEVICE_ADMIN"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by device administration receiver, to ensure that only the system can interact with it -->
+
+    <uses-permission android:name="android.permission.BIND_DREAM_SERVICE"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by an DreamService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_INCALL_SERVICE"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by a InCallService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_INPUT_METHOD"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by an InputMethodService, to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_MIDI_DEVICE_SERVICE"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by an MidiDeviceService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_NFC_SERVICE"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by a HostApduService or OffHostApduService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by an NotificationListenerService, to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_PRINT_RECOMMENDATION_SERVICE"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by a PrintService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_PRINT_SERVICE"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by a PrintService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_QUICK_SETTINGS_TILE"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by a TileService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_REMOTEVIEWS"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by a RemoteViewsService, to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_SCREENING_SERVICE"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by a CallScreeningService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_TELECOM_CONNECTION_SERVICE"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by a ConnectionService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_TEXT_SERVICE"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by a TextService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_TV_INPUT"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by a TvInputService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_VISUAL_VOICEMAIL_SERVICE"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by a VisualVoicemailService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_VOICE_INTERACTION"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by a VoiceInteractionService, to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_VPN_SERVICE"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by a VpnService, to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_VR_LISTENER_SERVICE"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by an VrListenerService to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BIND_WALLPAPER"  tools:ignore="ProtectedPermissions" />
+    <!-- Must be required by a WallpaperService, to ensure that only the system can bind to it -->
+
+    <uses-permission android:name="android.permission.BLUETOOTH_STACK"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows applications to connect to paired bluetooth devices -->
+
+    <uses-permission android:name="android.permission.BODY_SENSORS"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to access data from sensors that the user uses to measure what is happening inside his/her body, such as heart rate -->
+
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REMOVED"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to broadcast a notification that an application package has been removed -->
+
+    <uses-permission android:name="android.permission.BROADCAST_SMS"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to broadcast an SMS receipt -->
+
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to broadcast sticky intents -->
+
+    <uses-permission android:name="android.permission.BROADCAST_WAP_PUSH"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to broadcast WAP push messages -->
+
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to capture audio output -->
+
+    <uses-permission android:name="android.permission.CAPTURE_SECURE_VIDEO_OUTPUT"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to capture secure video output -->
+
+    <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to capture video output -->
+
+    <uses-permission android:name="android.permission.CARRIER_FILTER_SMS"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to intercept SMS messages from the user's carrier, read them, and then either pass them to the receiver specified by the app's manifest, or to abort them altogether -->
+
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to modify the current configuration, such as locale -->
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- Allows applications to change network connectivity state -->
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <!-- Allows applications to enter Wi-Fi Multicast mode -->
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- Allows applications to change Wi-Fi connectivity state -->
+
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to clear the caches of all installed applications on the device -->
+
+    <uses-permission android:name="android.permission.CONFIRM_FULL_BACKUP"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to confirm full backup operation -->
+
+    <uses-permission android:name="android.permission.CONNECTIVITY_INTERNAL"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an internal user to use privileged APIs for connectivity -->
+
+    <uses-permission android:name="android.permission.CONTROL_INCALL_EXPERIENCE"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows control of various aspects of the in-call experience -->
+
+    <uses-permission android:name="android.permission.CONTROL_KEYGUARD"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows applications to open, close, or disable the keyguard -->
+
+    <uses-permission android:name="android.permission.CONTROL_LOCATION_UPDATES"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows enabling/disabling location update notifications from the radio -->
+
+    <uses-permission android:name="android.permission.CONTROL_WIFI_DISPLAY"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows applications to turn on/off Wi-Fi Display -->
+
+    <uses-permission android:name="android.permission.COPY_PROTECTED_DATA"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows the app to copy protected content from a DRM content provider -->
+
+    <uses-permission android:name="android.permission.CREATE_USERS"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to create users -->
+
+    <uses-permission android:name="android.permission.CRYPT_KEEPER"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to invoke the crypt keeper -->
+
+    <uses-permission android:name="android.permission.DEVICE_POWER"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows low-level access to power management -->
+
+    <uses-permission android:name="android.permission.DIAGNOSTIC"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows applications to RW to diagnostic resources -->
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <!-- Allows applications to disable the keyguard -->
+
+    <uses-permission android:name="android.permission.DISPATCH_NFC_MESSAGE"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to dispatch NFC (Near Field Communication) messages -->
+
+    <uses-permission android:name="android.permission.DUMP"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to retrieve state dump information from system services -->
+
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <!-- Allows an application to expand or collapse the status bar -->
+
+    <uses-permission android:name="android.permission.FACTORY_TEST"  tools:ignore="ProtectedPermissions" />
+    <!-- Run as a manufacturer test application, running as the root user -->
+
+    <uses-permission android:name="android.permission.FILTER_EVENTS"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to monitor incoming events to provide context info for Assist -->
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- Allows access to the flashlight -->
+
+    <uses-permission android:name="android.permission.FORCE_BACK"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to force a BACK operation on whatever is the top activity -->
+
+    <uses-permission android:name="android.permission.FOREGROUND_CLOSE" />
+    <!-- Allows an application to close a user interface, including, but not limited to, the status bar and system bar -->
+
+    <uses-permission android:name="android.permission.FRAME_STATS"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows to read frame buffer stats -->
+
+    <uses-permission android:name="android.permission.FREEZE_SCREEN"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to freeze the screen -->
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS_PRIVILEGED"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows access to the list of accounts in the Accounts Service -->
+
+    <uses-permission android:name="android.permission.GET_APP_GRANTED_URI_PERMISSIONS"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to query the uri permissions that are granted to it -->
+
+    <uses-permission android:name="android.permission.GET_DETAILED_TASKS"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to get details about tasks -->
+
+    <uses-permission android:name="android.permission.GET_IGNORED_CALL_LOG" />
+    <!-- Allows an application to read the user's ignored call log -->
+
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <!-- Allows an application to find out the space used by any package -->
+
+    <uses-permission android:name="android.permission.GET_PROCESS_STATE_AND_OOM_SCORE"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to retrieve the memory status of the system -->
+
+    <uses-permission android:name="android.permission.GET_TOP_ACTIVITY_INFO"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to retrieve private frame buffer state -->
+
+    <uses-permission android:name="android.permission.GET_USERS" />
+    <!-- Allows getting information about the users -->
+
+    <uses-permission android:name="android.permission.GLOBAL_SEARCH"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows access to the global search suggestions list -->
+
+    <uses-permission android:name="android.permission.GRANT_RUNTIME_PERMISSIONS"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to grant runtime permissions -->
+
+    <uses-permission android:name="android.permission.HARDWARE_TEST"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows low-level access to hardware -->
+
+    <uses-permission android:name="android.permission.HDMI_CEC"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows applications to perform I/O operations over HDMI -->
+
+    <uses-permission android:name="android.permission.INJECT_EVENTS"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to inject user events (keys, touch, trackball) into the event stream and deliver them to ANY window -->
+
+    <uses-permission android:name="android.permission.INSTALL_LOCATION_PROVIDER"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to install a location provider into the Location Manager -->
+
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to install packages -->
+
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT" />
+    <!-- Allows an application to install a shortcut in Launcher -->
+
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to open windows that are for use by parts of the system user interface -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Allows applications to open network sockets -->
+
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to call killBackgroundProcesses(String) -->
+
+    <uses-permission android:name="android.permission.LOCAL_MAC_ADDRESS"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows access to the device's MAC address -->
+
+    <uses-permission android:name="android.permission.LOOP_RADIO"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows control of the FM radio -->
+
+    <uses-permission android:name="android.permission.MANAGE_ACTIVITY_STACKS"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to manage the activity stacks -->
+
+    <uses-permission android:name="android.permission.MANAGE_APP_OPS_MODES"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to manage (create, destroy, and manipulate) the various AppOps modes for the application -->
+
+    <uses-permission android:name="android.permission.MANAGE_APP_TOKENS"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to manage (create, destroy, Z-order) application tokens in the window manager -->
+
+    <uses-permission android:name="android.permission.MANAGE_AUDIO_POLICY"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to manage audio policies -->
+
+    <uses-permission android:name="android.permission.MANAGE_AUTOFILL" />
+    <!-- Allows an application to manage the Autofill framework -->
+
+    <uses-permission android:name="android.permission.MANAGE_BIND_INSTANT_SERVICE"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to manage the Binder proxy's internal state -->
+
+    <uses-permission android:name="android.permission.MANAGE_DEVICE_ADMINS"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to manage device admin settings -->
+
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to manage access to documents, usually as part of a document picker -->
+
+    <uses-permission android:name="android.permission.MANAGE_INPUT_DEVICES" />
+    <!-- Allows an application to manage input devices -->
+
+    <uses-permission android:name="android.permission.MANAGE_IPSEC_TUNNELS"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to manage IPSEC tunnels -->
+
+    <uses-permission android:name="android.permission.MANAGE_MEDIA_PROJECTION"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to manage media projections -->
+
+    <uses-permission android:name="android.permission.MANAGE_NETWORK_POLICY"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to manage network policies and credentials -->
+
+    <uses-permission android:name="android.permission.MANAGE_NOTIFICATIONS"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to manage notifications -->
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="com.android.voicemail.permission.READ_VOICEMAIL"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.USE_SIP" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+
+    <uses-permission android:name="android.permission.MANAGE_PROFILE_AND_DEVICE_OWNERS"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to manage profile and device owners -->
+
+    <uses-permission android:name="android.permission.MANAGE_USB"  tools:ignore="ProtectedPermissions" />
+    <!-- Allows an application to manage access to USB -->
+
+    <uses-permission android:name="android.permission.MANAGE_USERS"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:label="btdbhub"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            <!-- Specifies an Android theme to apply to this Activity as soon as
+                 the Android process has started. This theme is visible to the user
+                 while the Flutter UI initializes. After that, this theme continues
+                 to determine the Window background behind the Flutter UI. -->
+            <meta-data
+              android:name="io.flutter.embedding.android.NormalTheme"
+              android:resource="@style/NormalTheme"
+              />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- Don't delete the meta-data below.
+             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+    </application>
+</manifest>
