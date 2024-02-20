@@ -36,16 +36,16 @@ class ButtonCustom extends MaterialButton {
       onTap: onPress,
       child: Container(
         decoration: BoxDecoration(
-            color: backgroundColor ?? AppColors.buttonRedPink,
+            color: backgroundColor ?? AppColors.greenAccentColor,
             borderRadius: BorderRadius.all(Radius.circular(15))),
         height: buttonHeight ?? 55,
         width: buttonWidth ?? Get.width,
         alignment: Alignment.center,
         child: BuildText.buildText(
           text: text,
-          color: textColor,
+          color: textColor??Colors.white,
           size: textSize??14,
-          weight: FontWeight.w500,
+          weight: FontWeight.w900,
           textAlign: TextAlign.center,
         ),
       ),
